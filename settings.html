@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Closet Items Test</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="rangeslider/rangeslider.css" rel="stylesheet">
+    <link href="css/settings.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <a href="index.html" class="masthead-brand"><img src="./images/brolly_icon_white.png" class="logo"></a>
+                        <nav class="nav nav-masthead">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="settings.html">Get Started</a>
+                        </nav>
+                    </div>
+                </div>
+
+
+        <div class="jumbotron">
+            <!-- Start Progress Bar -->
+            <div class="row justify-content-center" id="progress-bar">
+                <!-- 1st Column - STEP 1 -->
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12" id="progress-icon-step1">
+                            <!--                             <img src="images/checkmark.svg" class="progress-check"/> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="progress-text" id="progress-text-step1">Connect Calendar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Col - line -->
+                <div class="col-1">
+                    <hr>
+                </div>
+                <!-- 3rd column - STEP 2 -->
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12" id="progress-icon-step2">
+                            2
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="progress-text" id="progress-text-step2">Select Items</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th column - line -->
+                <div class="col-1">
+                    <hr>
+                </div>
+                <!-- 5th column - STEP 3 -->
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12" id="progress-icon-step3">
+                            3
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="progress-text" id="progress-text-step3">Set Item Preferences</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6th column - line -->
+                <div class="col-1">
+                    <hr>
+                </div>
+                <!-- 7th column - STEP 4 -->
+                <div class="col-2">
+                    <div class="row">
+                        <div class="col-12" id="progress-icon-step4">
+                            4
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="progress-text" id="progress-text-step4">Set Alerts</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- / END 5th column-->
+            </div>
+            <!-- / END Progress Bar -->
+            <div class="row text-center ">
+                <div class="col-12">
+                    <h2 id="step-subheading"></h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12" id="clothing-items-container">
+                    <!-- Dynamically populated from array -->
+                </div>
+            </div>
+            <div class="row">
+                <div id="alert" class="col-12 text-center alert-warning">
+                </div>
+                <div class="col-12 text-center">
+                    <!-- STEP1 Buttons -->
+                    <button type="button" id="authorize-button" class="btn btn-outline-primary btn-lg">Authorise</button>
+                    <!-- STEP2 Buttons -->
+                    <button type="button" id="step2-previous" class="btn btn-primary hidden">Previous</button>
+                    <button type="button" id="step2-next" class="btn btn-primary hidden">Next</button>
+                    <!-- STEP3 Buttons -->
+                    <button type="button" id="step3-previous" class="btn btn-primary hidden">Previous</button>
+                    <button type="button" id="step3-next" class="btn btn-primary hidden">Next</button>
+                    <!-- STEP4 Buttons -->
+                    <button type="button" id="step4-previous" class="btn btn-primary hidden">Previous</button>
+                    <button type="button" id="step4-next" class="btn btn-primary hidden">Save</button>
+                    <button id="signout-button" style="display: none;">Sign Out</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p> &copy; The Brolly Team - Group 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaNawaFmIi-kGyIDoa4HZ7j5WfR11w0DM"></script>
+    <script src="rangeslider/rangeslider.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <script src="js/settings.js " type="text/javascript "></script>
+
+</body>
+
+</html>
+
